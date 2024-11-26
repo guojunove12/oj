@@ -2,12 +2,9 @@ package com.oj.judge;
 
 import cn.hutool.json.JSONArray;
 import cn.hutool.json.JSONObject;
-import com.alibaba.druid.sql.visitor.functions.If;
-import com.mysql.cj.xdevapi.JsonArray;
 import com.oj.common.exception.CompileError;
 import com.oj.common.exception.SubmitError;
 import com.oj.common.exception.SystemError;
-import com.oj.judge.entity.LanguageConfig;
 import com.oj.util.Constants;
 import com.oj.util.JudgeUtils;
 import org.springframework.util.StringUtils;
@@ -22,7 +19,7 @@ import java.util.List;
 
 public class Compile {
 
-    public static String compile(LanguageConfig languageConfig,
+    public static String compile(String languageConfig,
                                  String code,
                                  String language,
                                  HashMap<String,String> extraFiles) throws SystemError, CompileError, SubmitError {

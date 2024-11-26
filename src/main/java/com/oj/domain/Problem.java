@@ -1,4 +1,4 @@
-package com.oj.entity;
+package com.oj.domain;
 
 import com.baomidou.mybatisplus.annotation.*;
 import io.swagger.annotations.ApiModel;
